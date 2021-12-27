@@ -1,0 +1,27 @@
+body {
+    background-color: darkgreen;
+}
+
+h1 {
+    color:rgb(180, 9, 9);
+    background-color: seashell;
+    border: 1px solid black;
+    margin: 10px 0px 5px 0px;
+    padding: 10px;
+    text-align: center;
+    font-family: cursive;
+}
+
+.card {
+    margin: 10px;
+    background-color: seashell;
+}
+
+.card-title {
+    color:rgb(2, 65, 2);
+    font-family: cursive;
+}
+
+a {
+    color:darkred;
+}
