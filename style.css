@@ -4,12 +4,22 @@ body {
 
 h1 {
     color:rgb(180, 9, 9);
+    text-align: center;
+    font-family: cursive;
+}
+
+.header-box {
     background-color: seashell;
     border: 1px solid black;
     margin: 10px 0px 5px 0px;
     padding: 10px;
-    text-align: center;
-    font-family: cursive;
+}
+
+.header-text {
+    color: rgb(2, 65, 2);
+    font-size: 18px;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif
 }
 
 .card {
@@ -20,6 +30,10 @@ h1 {
 .card-title {
     color:rgb(2, 65, 2);
     font-family: cursive;
+}
+
+.card-text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .later-message {
