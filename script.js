@@ -1,20 +1,20 @@
 const startDate = moment("2021-12-28");
-var currentDate = moment();
 
 var updateTime = function() {
-    currentDate = moment();
-
+    var currentDate = moment();
+    showCards(currentDate);
 }
 
-var showCards = function() {
+var showCards = function(date) {
     for (var i = 0; i < 12; i++) {
         
 
-        if (startDate.add(i, "days").isSameOrBefore(currentDate, "day")) {
+        if (startDate.add(i, "days").isSameOrBefore(date, "day")) {
             document.getElementById(`card-${i + 1}`).removeAttribute("hidden");
             document.getElementById(`later-message-${i + 1}`).setAttribute("hidden", "");
         }
     }
 }
 
-showCards();
+updateTime();
+setInterval(updateTime, 1000 * 60);
